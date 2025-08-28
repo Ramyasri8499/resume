@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasanthi Kesanakurthi - Portfolio</title>
+  <style>
+    /* Root variables for themes */
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #222;
+      --card-bg: #f5f5f5;
+      --accent: #0077ff;
+    }
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #f5f5f5;
+      --card-bg: #1e1e1e;
+      --accent: #4dabf7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--card-bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .theme-toggle {
+      cursor: pointer;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: transparent;
+      transition: background 0.3s;
+    }
+    .theme-toggle:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.2rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--card-bg);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prasanthi Kesanakurthi</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#internship">Internship</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Motivated Artificial Intelligence graduate seeking a challenging role to leverage my technical skills in programming and web development. Passionate about contributing to innovative projects and driving impactful solutions in a dynamic organization that values learning and growth.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">Bachelor of Science (Artificial Intelligence), Aditya Degree College (GPA: 8.7), 2023 - Present</div>
+    <div class="card">Intermediate, Akhil Junior College (GPA: 8.53), 2021 - 2023</div>
+    <div class="card">Schooling, A.P. Residential School (GPA: 9.8), 2015 - 2021</div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <strong>Languages:</strong> C, Python, Java, HTML, PHP, MySQL, MongoDB<br>
+      <strong>Frameworks:</strong> Pandas, Numpy, Matplotlib, Scikit-Learn<br>
+      <strong>Tools:</strong> Power BI, Excel, PowerPoint
+    </div>
+  </section>
+
+  <section id="internship">
+    <h2>Internship</h2>
+    <div class="card">
+      <strong>Power BI Intern</strong> (Apr 2025 - May 2025, ULearn, Remote)<br>
+      Completed training on data modeling, dashboards, report automation, Power Query, DAX, and real-time connections. Built sample reports and analytics dashboards.
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>Face Detection:</strong> Simple facial recognition app using mBlock. Demonstrated basic face detection principles.
+    </div>
+    <div class="card">
+      <strong>QR Code Generator:</strong> Built a QR Code Generator in JavaScript for creating downloadable QR images.
+    </div>
+    <div class="card">
+      <strong>Hiring Search Tool:</strong> Developed a ReactJS + NodeJS + Firebase tool to search recruiters using Boolean queries. <a href="https://hiring-search.careerflow.ai/" target="_blank">Try it here</a>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Cisco Certification in Python</li>
+      <li>Microsoft Essentials of GenAI</li>
+      <li>Edx - Business Writing Techniques</li>
+      <li>Harvinn Webinar Certificate</li>
+      <li>Mepro Certification</li>
+      <li>Oracle Cloud Infrastructure</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kesanakurthiprasanthi@gmail.com">kesanakurthiprasanthi@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/prasanthi-kesanakurthi-6716612bb" target="_blank">View Profile</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Prasanthi Kesanakurthi | Portfolio</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const btn = document.querySelector('.theme-toggle');
+      if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        btn.textContent = "🌙";
+      } else {
+        body.setAttribute('data-theme', 'dark');
+        btn.textContent = "☀️";
+      }
+    }
+  </script>
+</body>
+</html>
